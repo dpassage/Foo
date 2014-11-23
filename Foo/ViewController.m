@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Chunk.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong)Chunk *chunk;
 
 @end
 
@@ -16,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.chunk = [[Chunk alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {

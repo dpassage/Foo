@@ -14,6 +14,7 @@
 		6B4744641A22A306006353A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4744631A22A306006353A3 /* Images.xcassets */; };
 		6B4744671A22A306006353A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4744651A22A306006353A3 /* LaunchScreen.xib */; };
 		6B4744731A22A307006353A3 /* FooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4744721A22A307006353A3 /* FooTests.m */; };
+		6B47447E1A22A324006353A3 /* Chunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B47447D1A22A324006353A3 /* Chunk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		6B47446C1A22A307006353A3 /* FooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4744711A22A307006353A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B4744721A22A307006353A3 /* FooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooTests.m; sourceTree = "<group>"; };
+		6B47447C1A22A324006353A3 /* Chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chunk.h; sourceTree = "<group>"; };
+		6B47447D1A22A324006353A3 /* Chunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chunk.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				6B4744631A22A306006353A3 /* Images.xcassets */,
 				6B4744651A22A306006353A3 /* LaunchScreen.xib */,
 				6B4744561A22A306006353A3 /* Supporting Files */,
+				6B47447C1A22A324006353A3 /* Chunk.h */,
+				6B47447D1A22A324006353A3 /* Chunk.m */,
 			);
 			path = Foo;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				6B47445F1A22A306006353A3 /* ViewController.m in Sources */,
 				6B47445C1A22A306006353A3 /* AppDelegate.m in Sources */,
 				6B4744591A22A306006353A3 /* main.m in Sources */,
+				6B47447E1A22A324006353A3 /* Chunk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
