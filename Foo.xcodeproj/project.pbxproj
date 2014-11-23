@@ -14,7 +14,7 @@
 		6B4744641A22A306006353A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4744631A22A306006353A3 /* Images.xcassets */; };
 		6B4744671A22A306006353A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4744651A22A306006353A3 /* LaunchScreen.xib */; };
 		6B4744731A22A307006353A3 /* FooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4744721A22A307006353A3 /* FooTests.m */; };
-		6B47447E1A22A324006353A3 /* Chunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B47447D1A22A324006353A3 /* Chunk.m */; };
+		6B4744811A22A39D006353A3 /* Chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4744801A22A39D006353A3 /* Chunk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,8 @@
 		6B4744721A22A307006353A3 /* FooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooTests.m; sourceTree = "<group>"; };
 		6B47447C1A22A324006353A3 /* Chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chunk.h; sourceTree = "<group>"; };
 		6B47447D1A22A324006353A3 /* Chunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chunk.m; sourceTree = "<group>"; };
+		6B47447F1A22A39D006353A3 /* Foo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B4744801A22A39D006353A3 /* Chunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chunk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				6B4744551A22A306006353A3 /* Foo */,
 				6B47446F1A22A307006353A3 /* FooTests */,
 				6B4744541A22A306006353A3 /* Products */,
+				6B47447F1A22A39D006353A3 /* Foo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,14 +89,15 @@
 			children = (
 				6B47445A1A22A306006353A3 /* AppDelegate.h */,
 				6B47445B1A22A306006353A3 /* AppDelegate.m */,
-				6B47445D1A22A306006353A3 /* ViewController.h */,
-				6B47445E1A22A306006353A3 /* ViewController.m */,
-				6B4744601A22A306006353A3 /* Main.storyboard */,
-				6B4744631A22A306006353A3 /* Images.xcassets */,
-				6B4744651A22A306006353A3 /* LaunchScreen.xib */,
-				6B4744561A22A306006353A3 /* Supporting Files */,
 				6B47447C1A22A324006353A3 /* Chunk.h */,
 				6B47447D1A22A324006353A3 /* Chunk.m */,
+				6B4744801A22A39D006353A3 /* Chunk.swift */,
+				6B4744631A22A306006353A3 /* Images.xcassets */,
+				6B4744651A22A306006353A3 /* LaunchScreen.xib */,
+				6B4744601A22A306006353A3 /* Main.storyboard */,
+				6B4744561A22A306006353A3 /* Supporting Files */,
+				6B47445D1A22A306006353A3 /* ViewController.h */,
+				6B47445E1A22A306006353A3 /* ViewController.m */,
 			);
 			path = Foo;
 			sourceTree = "<group>";
@@ -226,8 +230,8 @@
 			files = (
 				6B47445F1A22A306006353A3 /* ViewController.m in Sources */,
 				6B47445C1A22A306006353A3 /* AppDelegate.m in Sources */,
+				6B4744811A22A39D006353A3 /* Chunk.swift in Sources */,
 				6B4744591A22A306006353A3 /* main.m in Sources */,
-				6B47447E1A22A324006353A3 /* Chunk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +353,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Foo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Foo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,9 +366,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Foo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Foo-Bridging-Header.h";
 			};
 			name = Release;
 		};
